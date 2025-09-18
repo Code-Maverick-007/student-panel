@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ExternalLink, TrendingUp, Users, DollarSign, Clock, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { TrendingUp, Users, DollarSign, Clock, BookOpen } from 'lucide-react';
 import { careerFlowcharts } from '../data/mockData';
 
 // Enhanced career flowcharts with additional details
@@ -141,10 +142,12 @@ export default function CareerExplorerPage() {
                       {flowchart.duration}
                     </span>
                   </div>
-                  <button className="w-full py-2.5 px-4 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors flex items-center justify-center gap-2">
-                    <span>Explore Career Path</span>
-                    <ExternalLink className="h-3.5 w-3.5" />
-                  </button>
+                  <Link
+                    to={`/career-explorer/${flowchart.id}`}
+                    className="block w-full py-2.5 px-4 text-center text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+                  >
+                    Explore Career Path
+                  </Link>
                 </div>
               </div>
             ))}

@@ -7,22 +7,6 @@ import CollegeCard from '../components/CollegeCard';
 export default function DashboardPage() {
   const { state } = useApp();
 
-  if (!state.isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-800 mb-4">Please Login</h1>
-          <Link
-            to="/login"
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-          >
-            Go to Login
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
   const stats = [
     { label: 'Saved Colleges', value: state.savedColleges.length, icon: BookOpen, color: 'bg-blue-500' },
     { label: 'Connected Counselors', value: state.connectedCounselors.length, icon: Users, color: 'bg-green-500' },
@@ -105,7 +89,7 @@ export default function DashboardPage() {
                       <p className="text-gray-600 text-xs">{college.location}</p>
                     </div>
                     <Link
-                      to={`/college/${college.id}`}
+                      to={`/colleges/${college.id}`}
                       className="text-blue-600 hover:text-blue-700 text-sm"
                     >
                       View

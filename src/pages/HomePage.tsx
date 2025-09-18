@@ -20,7 +20,7 @@ export default function HomePage() {
       title: 'Explore Careers',
       description: 'Find your perfect career path',
       icon: Briefcase,
-      path: '/careers',
+      path: '/career-explorer',
       color: 'bg-green-500'
     },
     {

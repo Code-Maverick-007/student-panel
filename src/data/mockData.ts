@@ -216,30 +216,60 @@ export const aptitudeQuestions = [
   }
 ];
 
-export const careerFlowcharts = [
+export const careerFlowcharts: any[] = [
   {
-    id: '1',
-    title: 'Engineering Career Path',
-    description: 'From BTech to various engineering specializations',
-    image: 'https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=400'
+    id: "engineering",
+    category: "Technology",
+    title: "Engineering Career Path",
+    description: "From BTech to various engineering specializations like AI/ML, Robotics, and Data Science.",
+    courseCount: 8,
+    duration: "4 years",
+    image: "https://images.unsplash.com/photo-1581090700227-4c4a56c2d3d6?q=80&w=1200&auto=format", 
   },
   {
-    id: '2',
-    title: 'Medical Career Path',
-    description: 'From MBBS to specialized medical practice',
-    image: 'https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=400'
+    id: "medical",
+    category: "Healthcare",
+    title: "Medical Career Path",
+    description: "From MBBS to specialized medical practice including MD, MS, and allied health sciences.",
+    courseCount: 12,
+    duration: "5+ years",
+    image: "https://images.unsplash.com/photo-1584515979956-d9f6c1f1e3c6?q=80&w=1200&auto=format",
   },
   {
-    id: '3',
-    title: 'Business Career Path',
-    description: 'From MBA to corporate leadership roles',
-    image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400'
+    id: "business",
+    category: "Business",
+    title: "Business Career Path",
+    description: "From MBA to leadership roles across finance, HR, marketing, and international business.",
+    courseCount: 10,
+    duration: "2 years",
+    image: "https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=1200&auto=format",
   },
   {
-    id: '4',
-    title: 'Technology Career Path',
-    description: 'From Computer Science to tech innovation',
-    image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=400'
+    id: "arts",
+    category: "Arts",
+    title: "Arts & Humanities Career Path",
+    description: "Explore careers in literature, history, psychology, mass communication, and creative arts.",
+    courseCount: 7,
+    duration: "3 years",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format",
+  },
+  {
+    id: "law",
+    category: "Law",
+    title: "Law Career Path",
+    description: "Journey from LLB to specialized fields like Corporate, Criminal, and Cyber Law.",
+    courseCount: 6,
+    duration: "5 years",
+    image: "https://images.unsplash.com/photo-1604014237850-8f1be0d3a2cf?q=80&w=1200&auto=format",
+  },
+  {
+    id: "defence",
+    category: "Defence",
+    title: "Defence & Armed Forces Path",
+    description: "Career paths in Army, Navy, Air Force including technical and flying branches.",
+    courseCount: 5,
+    duration: "Varies",
+    image: "https://images.unsplash.com/photo-1594938298600-0f34c8b0e3aa?q=80&w=1200&auto=format",
   }
 ];
 
